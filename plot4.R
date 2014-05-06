@@ -22,3 +22,5 @@ legend("topright",cex=0.45,bty="n",c("Sub_metering_1","Sub_metering_2","Sub_mete
 
 power[,4] <-  as.numeric(levels(power[,4])[power[,4]])
 plot(x=power$Datetime,y=power[,4],type="l",ylab="Global_reactive_power",xlab="datetime")
+dev.copy(png, file = "plot4.png")
+dev.off()
